@@ -1,5 +1,7 @@
 sphinx_book_theme
 sphinx
+myst_nb
+sphinxcontrib-bibtex
 jupyter
 numpy
 scipy
