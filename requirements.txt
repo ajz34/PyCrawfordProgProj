@@ -1,0 +1,9 @@
+sphinx_book_theme
+sphinx
+jupyter
+numpy
+scipy
+matplotlib
+pyscf
+
+molmass
