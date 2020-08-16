@@ -5,9 +5,10 @@ sphinxcontrib-bibtex
 sphinx_copybutton
 sphinx_thebe
 jupyter
+jupyterlab
+pyscf
 numpy
 scipy
 matplotlib
-pyscf
 
 molmass
