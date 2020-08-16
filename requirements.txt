@@ -1,7 +1,9 @@
 sphinx_book_theme
-sphinx
+sphinx<3
 myst_nb
 sphinxcontrib-bibtex
+sphinx_copybutton
+sphinx_thebe
 jupyter
 numpy
 scipy
