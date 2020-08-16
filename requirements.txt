@@ -1,5 +1,5 @@
 sphinx_book_theme
-sphinx<3
+sphinx>=2,<3
 myst_nb
 sphinxcontrib-bibtex
 sphinx_copybutton
