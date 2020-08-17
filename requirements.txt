@@ -8,7 +8,7 @@ jupyter
 jupyterlab
 pyscf
 numpy
-scipy
+scipy<1.5
 matplotlib
 
 molmass
