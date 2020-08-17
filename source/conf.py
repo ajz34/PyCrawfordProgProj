@@ -71,7 +71,6 @@ html_theme_options = {
     "repository_url": "https://github.com/ajz34/PyCrawfordProgProj",
     "launch_buttons": {
         "binderhub_url": "https://mybinder.org",
-        "colab_url": "https://colab.research.google.com/",
         "notebook_interface": "jupyterlab",
         "thebe": True,
     },
