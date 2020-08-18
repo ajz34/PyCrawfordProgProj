@@ -3,6 +3,16 @@ from molmass import ELEMENTS
 from scipy import constants
 from scipy.constants import physical_constants
 
+E_h = physical_constants["Hartree energy"][0]
+a_0 = physical_constants["Bohr radius"][0]
+amu = physical_constants["atomic mass constant"][0]
+c_0 = physical_constants["speed of light in vacuum"][0]
+h = physical_constants["Planck constant"][0]
+kilo = constants.kilo
+centi = constants.centi
+angstrom = constants.angstrom
+mega = constants.mega
+
 
 class Molecule:
 
@@ -148,9 +158,9 @@ class Molecule:
         print("In {:>15}: {:16.8e} {:16.8e} {:16.8e}".format(
             "amu bohr^2", *(moment_in_amu_bohr)))
         print("In {:>15}: {:16.8e} {:16.8e} {:16.8e}".format(
-            "amu angstrom^2", *(moment_in_amu_bohr * physical_constants["Bohr radius"][0]**2 / constants.angstrom**2)))
+            "amu angstrom^2", *(moment_in_amu_bohr * a_0**2 / angstrom**2)))
         print("In {:>15}: {:16.8e} {:16.8e} {:16.8e}".format(
-            "g cm^2", *(moment_in_amu_bohr * physical_constants["atomic mass constant"][0] * constants.kilo * physical_constants["Bohr radius"][0]**2 / constants.centi**2)))
+            "g cm^2", *(moment_in_amu_bohr * amu * kilo * a_0**2 / centi**2)))
 
     def type_of_moment_of_interia(self) -> str:
         # Output: Judge which type of moment of interia is
@@ -164,7 +174,7 @@ class Molecule:
 
     def rotational_constants(self) -> np.ndarray or list:
         # Output: Rotational constant in cm^-1
-        return constants.Planck / (8 * np.pi**2 * constants.c * self.moment_of_inertia()) / physical_constants["atomic mass constant"][0] / physical_constants["Bohr radius"][0]**2 * constants.centi
+        return h / (8 * np.pi**2 * c_0 * self.moment_of_inertia()) / amu / a_0**2 * centi
 
     def print_solution_01(self):
         print("=== Atom Charges ===")
@@ -182,4 +192,10 @@ class Molecule:
         print("Type: ", self.type_of_moment_of_interia())
         print("=== Rotational Constants ===")
         print("In cm^-1: {:12.5f} {:12.5f} {:12.5f}".format(*self.rotational_constants()))
-        print("In   MHz: {:12.5f} {:12.5f} {:12.5f}".format(*(self.rotational_constants() * constants.c / constants.centi / constants.mega)))
+        print("In   MHz: {:12.5f} {:12.5f} {:12.5f}".format(*(self.rotational_constants() * c_0 / centi / mega)))
+
+
+if __name__ == '__main__':
+    mol = Molecule()
+    mol.construct_from_dat_file("input/acetaldehyde.dat")
+    mol.print_solution_01()
