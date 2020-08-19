@@ -59,7 +59,7 @@ class Molecule:
 
 
 if __name__ == '__main__':
-    mol = Molecule()
-    mol.construct_from_dat_file("input/h2o_geom.txt")
-    mol.obtain_hessian("input/h2o_hessian.txt")
-    mol.print_solution_02()
+    mole = Molecule()
+    mole.construct_from_dat_file("input/h2o_geom.txt")
+    mole.obtain_hessian("input/h2o_hessian.txt")
+    mole.print_solution_02()

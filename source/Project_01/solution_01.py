@@ -196,6 +196,6 @@ class Molecule:
 
 
 if __name__ == '__main__':
-    mol = Molecule()
-    mol.construct_from_dat_file("input/acetaldehyde.dat")
-    mol.print_solution_01()
+    mole = Molecule()
+    mole.construct_from_dat_file("input/acetaldehyde.dat")
+    mole.print_solution_01()
