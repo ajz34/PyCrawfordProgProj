@@ -15,4 +15,4 @@ python:
     - requirements: requirements.txt
   system_packages: true
 
-formats: [htmlzip]
+formats: [htmlzip, pdf]
