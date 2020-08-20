@@ -197,6 +197,7 @@ class Molecule:
             dm_next = self.get_updated_dm(dm)
             print("{:5d} {:20.12f} {:20.12f} {:20.12f}".format(epoch, eng_next, eng_next - eng, np.linalg.norm(dm_next - dm)))
             if np.abs(eng_next - eng) < thresh_eng and np.linalg.norm(dm_next - dm) < thresh_dm:
+                eng, dm = eng_next, dm_next
                 break
             eng, dm = eng_next, dm_next
         return eng, dm
