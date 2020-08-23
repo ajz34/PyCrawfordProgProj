@@ -50,7 +50,7 @@ exclude_patterns = []
 # a list of builtin themes.
 #
 html_theme = 'sphinx_book_theme'
-thml_title = "Crawford's Programming Exercises by Python"
+thml_title = "Crawford’s Programming Tutorial in Chemistry by Python"
 
 # Add any paths that contain custom static files (such as style sheets) here,
 # relative to this directory. They are copied after the builtin static files,
