@@ -3,8 +3,8 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Crawford's Programming Tutorial in Chemistry by Python
-======================================================
+Programming Tutorial in Chemistry by Python
+===========================================
 
 .. admonition:: This project is under-construction and not original!
    :class: warning
