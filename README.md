@@ -7,7 +7,7 @@ For documents on web-page, refer to https://pycrawfordprogproj.readthedocs.io/en
 
 This is an ongoing project which uses awesome [Crawford’s Programming Projects](https://github.com/CrawfordGroup/ProgrammingProjects) as original materials, so in many cases, several sentences may be shamelessly ctrl-c/ctrl-v’ed with little or a little modification. The author of this repository really thanks original authors of the origin of this tutorial.
 
-The author also regards PySCF as one of the magnificent quantum packages. In this tutorial, PySCF may become the default SCF and orbital integral engine/interface.
+The author also regards [PySCF](https://github.com/pyscf/pyscf) as one of the magnificent quantum packages. In this tutorial, [PySCF](https://github.com/pyscf/pyscf) may become the default SCF and orbital integral engine/interface.
 
 ## Preface
 
