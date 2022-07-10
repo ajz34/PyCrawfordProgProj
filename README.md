@@ -13,7 +13,7 @@ The author also regards [PySCF](https://github.com/pyscf/pyscf) as one of the ma
 
 This tutorial is intended to touch on many, but certainly not all, of the fundamentals of Python/PySCF programming with an emphasis on quantum chemistry.
 
-Currently, the author is not going to write fundamentals of python. So, before heading to the first project, the reader is suggested to review his/hers comprehension of python. Knowledge of other languages with OOP (object-oriented programming), and scientific calculation/simulation software (e.g., Matlab, Mathematica, etc.) is also appreciated.
+Currently, the author is not going to write fundamentals of python. So, before heading to the first project, the reader is suggested to review his/hers comprehension of python. Knowledge of other languages with OOP (object-oriented programming), and scientific calculation/simulation softwares (e.g., `MATLAB` and `Wolfram Mathematica`) is also appreciated.
 
 To begin work on the projects, you can create a clone of this repository. First, navigate to the directory where you would like to keep your programming projects. Then create the clone by this command
 
